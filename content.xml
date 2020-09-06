@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="ws_1437182479" name="Remove Fog: The Teladi Outpost" description="Fog in Fields of Opportunity [FO] becomes invisible. Should improve FPS." version="100" save="false" author="Vectorial1024" date="2018-07-10" sync="false" lastupdate="1531224685">
+  <text language="86" name="去去雾气走：The Teladi Outpost" description="[FO]的雾气不再可见。应可提升帧率(FPS)。"/>
+  <text language="88" name="去去霧霾走：The Teladi Outpost" description="[FO]的霧氣不再可見。應可提升幀率(FPS)。"/>
+</content>

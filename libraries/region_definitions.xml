@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+	<!-- Removing the fog from the map; this should allow the highest modularity and compatibility -->
+	<remove sel="/regions/region[@name='region_clustert_s02']/fields/nebula[@resource='hydrogen']/@ref"/>
+	<remove sel="/regions/region[@name='region_clustert_s02']/fields/nebula[@resource='plasma']/@ref"/>
+	<remove sel="/regions/region[@name='region_clustert_big_s01_01']/fields/nebula[@resource='hydrogen']/@ref"/>
+	<remove sel="/regions/region[@name='region_clustert_s02_01']/fields/positional[@ref='fog_lit_blue_external_dim_v1_big_macro']"/>
+	<remove sel="/regions/region[@name='region_clustert_s02_01']/fields/positional[@ref='fog_lit_blue_external_v1_big_macro']"/>
+	<remove sel="/regions/region[@name='region_clustert_s02_01']/fields/positional[@ref='fog_lit_blue_external_v1alpha_big_macro']"/>
+	<remove sel="/regions/region[@name='region_clustert_deadly_01']/fields/nebula[@resource='hydrogen']/@ref"/>
+	<remove sel="/regions/region[@name='region_clustert_deadly_01']/fields/positional[@ref='fog_outside_set4_blue_macro']"/>
+	<remove sel="/regions/region[@name='region_clustert_deadly_01']/fields/positional[@ref='fog_lit_blue_external_v1alpha_big_macro']"/>
+	<remove sel="/regions/region[@name='region_clustert_deadly_01']/fields/positional[@ref='fog_lit_blue_external_v1_big_macro']"/>
+	<remove sel="/regions/region[@name='region_bigasteroid_01']/fields/nebula[@ref='stonestest_macro']"/>
+	<remove sel="/regions/region[@name='region_bigasteroid_02']/fields/nebula[@resource='ions']/@ref"/>
+	<remove sel="/regions/region[@name='region_bigasteroid_02']/fields/positional[@ref='fog_outside_set1_macro']"/>
+	<remove sel="/regions/region[@name='debris_field_3']/fields/positional[@ref='fog_outside_set1_macro']"/>
+	
+	<!-- Navigation Assitance; highlighting the danger fields to compensate the removal of nebulas etc. -->
+	<add sel="/regions/region[@name='region_clustert_deadly_01']/fields">
+		<positional ref="fog_lit_orange_external_v2_macro" lodrule="nebula" densityfactor="0.5" rotation="0" rotationvariation="0.25" distancefactor="0.5"/>
+	</add>
+</diff>
